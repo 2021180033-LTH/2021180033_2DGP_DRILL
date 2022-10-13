@@ -43,10 +43,10 @@ def handle_events():
             match event.key:
                 case pico2d.SDLK_ESCAPE:
                     game_framework.pop_state()
-                case pico2d.SDLK_KP_PLUS:
+                case pico2d.SDLK_PLUS:
                     game_framework.stack[-2].boy.numb += 1
                     game_framework.pop_state()
-                case pico2d.SDLK_KP_MINUS:
+                case pico2d.SDLK_MINUS:
                     if game_framework.stack[-2].boy.numb >= 2:
                         game_framework.stack[-2].boy.numb -= 1
                     game_framework.pop_state()
